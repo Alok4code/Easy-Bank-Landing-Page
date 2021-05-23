@@ -1,0 +1,271 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: 'Public Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--White);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--dark-blue);
+  border-bottom: 1px solid var(--Lime-Green);
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+.container {
+  width: 1120px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.btn {
+  border: none;
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+  padding: 15px 20px;
+  border-radius: 50px;
+  color: var(--White);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, var(--Bright-Cyan), var(--Lime-Green));
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.header-section {
+  background-color: var(--Light-Gray);
+}
+
+.header-text {
+  flex: 1 0 40%;
+}
+.header-iamges {
+  flex: 1 0 60%;
+  position: relative;
+}
+
+.header-images img:first-child {
+  position: relative;
+  top: -50px;
+  bottom: 0;
+  right: -200px;
+  transform: scale(1.6);
+}
+
+.header-images img:last-child {
+  position: absolute;
+  top: -150px;
+  right: -270px;
+  transform: scale(1.1);
+}
+
+.header-text h1 {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.header-text p {
+  color: var(--Grayish-Blue);
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+section.pros-section {
+  background: var(--Light-Grayish-Blue);
+  padding: 100px 0;
+}
+
+section.pros-section h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section.pros-section p {
+  margin-bottom: 60px;
+  color: var(--Grayish-Blue);
+  line-height: 1.4;
+}
+
+section.pros-section .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.pros-section .card-wrapper > * + * {
+  margin-left: 30px;
+}
+
+.card-wrapper .card img {
+  margin-bottom: 30px;
+}
+
+.card-wrapper .card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.card-wrapper .card p {
+  font-size: 16px;
+}
+
+section.articles-section {
+  padding: 100px 0;
+  background-color: var(--Light-Gray);
+}
+
+.articles-section h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.article-wrapper {
+  display: flex;
+}
+
+.article-wrapper > * + * {
+  margin-left: 30px;
+}
+
+.article-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article-wrapper .content {
+  background: var(--White);
+  padding: 20px;
+}
+
+.article-wrapper .content a {
+  display: block;
+  padding: 10px 0;
+  color: var(--dark-blue);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.article-wrapper .content a:hover {
+  color: var(--Lime-Green);
+}
+
+.article-wrapper .content p {
+  font-size: 16px;
+  color: var(--Grayish-Blue);
+}
+
+footer {
+  background: var(--dark-blue);
+  padding: 30px 0;
+}
+
+footer ul {
+  list-style-type: none;
+}
+footer ul.socials {
+  display: flex;
+  margin-top: 60px;
+}
+
+footer ul.socials > * + * {
+  margin-left: 14px;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content a {
+  color: var(--Light-Gray);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .content a:hover {
+  color: var(--Grayish-Blue);
+}
+
+footer .content li {
+  margin-bottom: 10px;
+}
+
+footer .footer-cta {
+  text-align: right;
+}
+
+footer .copyright {
+  color: var(--Grayish-Blue);
+  font-size: 16px;
+  margin-top: 30px;
+}
