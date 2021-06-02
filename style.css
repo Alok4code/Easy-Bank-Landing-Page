@@ -30,7 +30,7 @@ ul {
   -webkit-font-smoothing: antialiased;
 }
 
-body {
+.root {
   overflow-x: hidden;
 }
 
